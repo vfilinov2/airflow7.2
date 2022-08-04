@@ -26,7 +26,7 @@ services:
       - AIRFLOW__WEBSERVER__SECRET_KEY=b27dfe9846d048294adc0df96ad43239fa325db739a0a69a60672e3e6272
     # Пробрасываем порты
     ports:
-      - 8001:8080
+      - 8080:8080
     # Пробрасываем папку с дагами
     volumes:
       - ./airflow/dags:/usr/local/airflow/dags
